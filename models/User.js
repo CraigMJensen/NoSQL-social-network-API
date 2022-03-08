@@ -23,6 +23,10 @@ const UserSchema = new Schema(
         'Please fill a valid email address',
       ],
     },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+    },
     thoughts: [
       {
         type: Schema.Types.ObjectId,
