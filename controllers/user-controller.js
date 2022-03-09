@@ -30,7 +30,7 @@ const userController = {
 
   createUser({ body }, res) {
     User.create(body)
-      .select('-__v')
+
       .then((dbUserData) => res.json(dbUserData))
       .catch((err) => res.json(err));
   },
@@ -53,7 +53,7 @@ const userController = {
 
   updateUser({ params, body }, res) {
     User.findOneAndUpdate({ _id: params.id }, body, { new: true })
-      .select('-__v')
+
       .then((dbUserData) => {
         if (!dbUserData) {
           res.status(404).json({ message: 'No user found with this id!' });
