@@ -47,6 +47,8 @@ const thoughtController = {
       })
       .catch((err) => res.json(err));
   },
+
+  updateThought({ params, body }, res) {},
 };
 
 module.exports = thoughtController;
