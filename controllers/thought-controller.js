@@ -65,14 +65,10 @@ const thoughtController = {
   },
 
   updateThought({ params, body }, res) {
-    Thought.findOneAndUpdate(
-      { _id: params.thoughtId },
-      { $push: { reactions: body } },
-      {
-        new: true,
-        runValidators: true,
-      }
-    )
+    Thought.findOneAndUpdate({ _id: params.thoughtId }, body, {
+      new: true,
+      runValidators: true,
+    })
       .populate({ path: 'reactions', select: '-__v' })
       .select('-__v')
 

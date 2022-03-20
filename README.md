@@ -24,6 +24,7 @@
   * Download this repository to your machine.
   * Open your CLI and navigate to the repository folder location.
   * Run `npm install` to get the packages installed to run this API.
+  * Run `npm start` to start the server to test the API routes.
   * Use insomnia or similar app to test the working routes. (api/users, api/users/userId, api/users/userId/friends, api/users/userId/friends/friendId, api/thoughts, api/thoughts/thoughtId, api/thoughts/thoughtId/reactions, api/thoughts/thoughtId/reactions/reactionId)
 
 ## License
