@@ -19,7 +19,7 @@
 
 ## Links
 
-![video-walkthrough](https://drive.google.com/file/d/1ima8uwXYYTo5TK1Ha9f_2-mgBzqNyBjj/view)
+  - https://drive.google.com/file/d/1ima8uwXYYTo5TK1Ha9f_2-mgBzqNyBjj/view
 
 ## Installation
 
